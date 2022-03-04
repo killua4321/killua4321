@@ -1,3 +1,26 @@
 <body style="background: #b5eeff">
-<h1> halo ini rumahku, namaku Ibrahim </h1>
+<h1> halo, namaku Ibrahim </h1>
 </body>
+<h1>Hai ini Ibrahim </h1>
+<h2>"Hewan favorit saya"</h2>
+
+<p>Masukkan hewan favoritmu</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+ let person = prompt("masukkan salah satu hewan favoritmu", "");
+  if (person != null) {
+    var x = document.createElement("SPAN");
+  	var t = document.createTextNode(person+" ");
+  	x.appendChild(t);
+  	document.body.appendChild(x);
+  }
+}
+</script>
+
+</body>
+</html>
